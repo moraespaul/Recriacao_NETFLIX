@@ -1,0 +1,140 @@
+/*body{
+
+    background-color: blue;    /* fundo da página 
+}*/
+
+
+/*header{                  #semantica de tag html
+    
+}*/
+/*
+header.container{   #semantica de class (.)
+    
+}
+*/
+
+/*header .container{
+    
+    border: 1px solid black;  #borda no container 
+}*/
+
+/*
+
+Declaração de váriaveis
+
+:root{
+    --vermelho: #E50914;      #cores principais
+    --preta: #141414;
+}
+
+
+*/
+
+/*
+Header nav a{
+    #Acessa a tag a(link) para fazer alterações
+}
+
+*/
+
+/*
+header nav a:houver{
+    #Quando o mouse estiver em cima do elemento ele faz alguma alteração
+}
+
+*/
+
+:root{
+    --vermelho: #E50914;     
+    --preta: #141414;
+}
+
+*{
+    margin: 0;    /* Margem*/
+    padding: 0;
+    box-sizing: border-box;  /* limite da caixa (borda)*/
+}
+
+                            
+                        /* Elementos Base */
+
+
+
+body{
+ 
+    background: var(--preta); /* Puxando a variavel preta, Fundo da pagia*/
+    font-family: 'times New Roman', Times New Roman, Times, serif; /* Fonte Padrão da Pagina*/
+    color:white; /* Declarando que tudo que for estrito no body tera a cor branca ou qualquer outra*/
+
+}
+
+header .container{
+
+    display: flex; /* Utilizado para Alinhamento dos Elementos na tela (display flex joga tudo para a linha*/
+    flex-direction: row; /* direção Padrão do Display  Flex*/
+    align-items:center; /* Alinhamento dos Itens no centro da linha neste caso*/
+    justify-content: space-between; /* Espaço entre a classe logo e a tag Nav*/
+}
+
+header .logo{
+    margin-left: 5px; /* dá um Espaçamento entre o logo e o final da tela a esquerda*/
+    color: var(--vermelho); /* Altera a cor da Logo, utilizando a variavel vermelha */
+    font-family: 'Arial Black'; /* altera a fonte do Logo*/
+    font-size: 40px; /* Altera o peso da Fonte (tamanho)*/
+
+
+} header nav a{
+
+    text-decoration: none ;   /* Remove as linhas de decoração dos links*/
+    color:#AAA;  /* cor das palavras dos links*/
+    margin-right: 10px ; /* Distanciamento entre os links a Direita*/
+
+}
+
+header nav a:hover{
+
+    color:#fff;  /* altera a cor da fonte quando o mouse passar por cima*/
+
+
+}
+
+/* Filme Principal*/
+
+.filme-principal{
+
+    font-size:16px; /* Tamanho da Fonte ou Peso*/
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-twd.jpg');   /* colocando a imagem de fundo no container, Linear background cria uma camada para diferenciar da imagem melhorando a leitura do texto*/
+
+    height:400px; /* tamanho da Caixa */
+    background-size: cover ; /*Especifica o tanho da imagem*/
+    
+    display: flex; /* Sempre como Padrao Jogar os elementos em linha*/
+    flex-direction: column;/* Muda a direção do display para coluna em vez de linha*/
+    justify-content: center; /*como ele segue sempre a direção do flex direction então nessa função center ira ficar centralizado no meio do container*/
+    align-items: flex-start; /* Alinha os itens sempre para iniciar a esquerda*/
+  }
+
+  .filme-principal .descricao{
+
+    margin-bottom: 90px;  /* distanciamento na parte superior do elemento a cima*/
+
+  }
+
+.titulo{
+    font-size:40px ;   /* Peso do titulo (tamanho)*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
