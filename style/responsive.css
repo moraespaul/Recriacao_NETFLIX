@@ -1,0 +1,30 @@
+@media screen and ( max-width:700px){   /*informa o que se deve fazer caso a tela tenha 700px pra menos*/
+
+    header .container{
+        display: flex;
+        flex-direction:column ;  /*joga os elementos para baixo e não na linha */
+        
+    }
+    header nav a:hover{
+
+        color:#fff;  /* altera a cor da fonte quando o mouse passar por cima*/
+    
+    
+    }
+
+ 
+
+
+    .botao{
+        margin-top: 5px;  /* dar espaçamento entre os botoes*/
+        width:300px ;   /*tamanho dos botoes*/
+        /*height: ;   largura dos botoes*/
+      }
+
+}
+
+@media screen and (min-width:1000px){
+    .descricao{
+        width:50% ;
+    }
+}
